@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .new {
+        line-height: 200px;
+        height: 200px;
+        margin: 12px auto;
+        text-align: center;
+        background-color: #333;
+      }
+      div h1 {
+        color: white;
+        font-size: 30px;
+      }
+      #product-input {
+        font-size: 18px;
+        margin: 40px auto;
+        display: block;
+        min-width: 120px;
+        height: 50px;
+        border: 2px solid #f50;
+      }
+      #product-btn {
+        position: absolute;
+        top: 270px;
+        right: 200px;
+      }
+
+      button {
+        min-width: 50px;
+        color: blue;
+        transform: scale(1);
+        transition: 0.2s;
+        background-color: white;
+        font-size: 17px;
+        height: 30px;
+      }
+      button:hover {
+        transform: scale(1.2);
+      }
+
+      #product-contanier {
+        background-color: #f2f2f2;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 10px auto;
+        min-width: 200px;
+        min-height: 100px;
+        border: 1px solid #e8e8e8;
+
+        color: rgb(120, 120, 252);
+      }
+    </style>
+    <div class="new"><h1>add your product here</h1></div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="product-input" />
+    <button id="product-btn">Add Product</button>
+    <div id="product-contanier"></div>
+
+    <button onclick="this.style.display='none';">click</button>
+
+    <!-- <div ></div> -->
+    <!-- <script src="./script.js"></script> -->
+    <script src="./index.js"></script>
+  </body>
+</html>
